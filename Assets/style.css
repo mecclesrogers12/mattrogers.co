@@ -18,10 +18,20 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	cursor: url('/cursor.png'), auto;
+	cursor: url('assets/cursor.png'), auto;
+	perspective: 100px;
 }
 
-img {
+.floating-matt {
+  position: absolute;
+  top: -250vh;
+  left: -50vw;
+  transition: transform 18s linear;
+  z-index: -1;
+  width: 250px;
+}
+
+img.main-matt {
    animation: rotate .5s infinite ease;
    animation-direction: alternate;
 }
