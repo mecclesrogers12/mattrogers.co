@@ -1,6 +1,6 @@
 function createMatt() {
   var matt = document.createElement('img');
-  matt.setAttribute('src', "assets/cursor.png");
+  matt.setAttribute('src', "Assets/cursor.png");
   matt.classList.add("floating-matt");
   matt.style.left = (Math.random() * 2 - 1) * 300 + "vw";
 
